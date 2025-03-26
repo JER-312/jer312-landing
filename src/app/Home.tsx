@@ -7,6 +7,10 @@ function Home() {
                 Regular Gilmer Text
             </div>
 
+            <div className="gilmer-medium text-2xl">
+                Medium Gilmer Text
+            </div>
+
             <div className="gilmer-bold text-2xl">
                 Bold Gilmer Text
             </div>

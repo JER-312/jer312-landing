@@ -7,8 +7,9 @@ export default {
                 gilmer: ['Gilmer', 'sans-serif'],
             },
             letterSpacing: {
-                'super-tight': '-0.07em',
-                'touch': '-0.10em',
+                'super-tight': '-0.07em', // Regular
+                'medium-tight': '-0.08em', // Medium, in between
+                'touch': '-0.10em',       // Bold
             },
         },
     },

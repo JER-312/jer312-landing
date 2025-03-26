@@ -3,27 +3,40 @@
 @font-face {
     font-family: 'Gilmer';
     src: url('/src/assets/fonts/Gilmer-Font/Gilmer Regular.otf') format('opentype');
-    font-weight: 400;
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilmer';
+    src: url('/src/assets/fonts/Gilmer-Font/Gilmer Medium.otf') format('opentype');
+    font-weight: 500; /* Medium */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilmer';
     src: url('/src/assets/fonts/Gilmer-Font/Gilmer Bold.otf') format('opentype');
-    font-weight: 700;
+    font-weight: 700; /* Bold */
     font-style: normal;
 }
 
 .gilmer-regular {
     font-family: 'Gilmer', sans-serif;
     font-weight: 400;
-    letter-spacing: -0.07em; /* Very tight, likely touching */
+    letter-spacing: -0.07em; /* Regular, touching lightly */
+}
+
+.gilmer-medium {
+    font-family: 'Gilmer', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.08em; /* Medium, slight touch */
 }
 
 .gilmer-bold {
     font-family: 'Gilmer', sans-serif;
     font-weight: 700;
-    letter-spacing: -0.10em; /* Extremely tight, letters overlapping slightly */
+    letter-spacing: -0.10em; /* Bold, noticeable touching */
 }
 
 /* Add more @font-face rules if you have other weights or styles (e.g., italic) */
