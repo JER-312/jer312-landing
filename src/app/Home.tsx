@@ -1,4 +1,3 @@
-import React from 'react';
 import videoFile from '../assets/sparkle-short.mp4';
 import image1 from '../assets/trash/h-c-1.png';
 import image2 from '../assets/trash/h-c-2.png';
