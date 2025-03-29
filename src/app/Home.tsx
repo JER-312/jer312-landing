@@ -1,4 +1,4 @@
-import videoFile from '../assets/sparkle-short.mp4';
+import videoFile from '../assets/jer312.mp4';
 import image1 from '../assets/trash/h-c-1.png';
 import image2 from '../assets/trash/h-c-2.png';
 import image3 from '../assets/trash/h-c-3.png';
@@ -9,8 +9,8 @@ function Home() {
     return (
         <div className="w-full min-h-screen">
             {/* Video Section */}
-            <section className="relative w-full bg-black">
-                <div className="relative w-full max-w-[1920px] mx-auto h-[70vh]">
+            <section className="relative w-full bg-white">
+                <div className="relative w-full mx-auto h-[100vh]">
                     <video
                         autoPlay
                         loop
