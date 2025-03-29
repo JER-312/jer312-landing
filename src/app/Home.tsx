@@ -1,4 +1,3 @@
-import videoFile from '../assets/jer312.mp4';
 import image1 from '../assets/trash/h-c-1.png';
 import image2 from '../assets/trash/h-c-2.png';
 import image3 from '../assets/trash/h-c-3.png';
@@ -10,7 +9,7 @@ function Home() {
         <div className="w-full min-h-screen">
             {/* Video Section */}
             <section className="relative w-full bg-white">
-                <div className="relative w-full mx-auto h-[100vh]">
+                <div className="relative w-full h-[100vh]"> {/* Changed max-w-[1080px] to w-full and h-[70vh] to h-[100vh] */}
                     <video
                         autoPlay
                         loop
@@ -18,7 +17,7 @@ function Home() {
                         playsInline
                         className="w-full h-full object-cover"
                     >
-                        <source src={videoFile} type="video/mp4" />
+                        <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
