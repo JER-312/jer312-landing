@@ -1,9 +1,8 @@
-// src/app/routes.tsx
 import {Navigate, RouteObject} from 'react-router-dom';
 import AppLayout from "../app/AppLayout.tsx";
 import Home from "../app/Home.tsx";
 import About from "../app/About.tsx";
-import Gallery from "../app/gallery/Gallery.tsx";
+import Gallery from "../app/Gallery.tsx";
 import Shop from "../app/Shop.tsx";
 
 const routes: RouteObject[] = [
