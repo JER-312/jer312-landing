@@ -27,14 +27,14 @@ const rows = [
     },
     {
         images: [
-            { src: image_r3_1, alt: "Summer piece 5", flex: "flex-[2]", aspect: "aspect-[2/3]", height: "h-[45vh] sm:h-[60vh] md:h-[70vh]" },
-            { src: image_r3_2, alt: "Summer piece 6", flex: "flex-[2]", aspect: "aspect-square", height: "h-[45vh] sm:h-[60vh] md:h-[70vh]" },
+            { src: image_r3_1, alt: "Summer piece 5", flex: "flex-[2]", aspect: "aspect-[2/3]", height: "h-[55vh] sm:h-[70vh] md:h-[80vh]" },
+            { src: image_r3_2, alt: "Summer piece 6", flex: "flex-[2]", aspect: "aspect-square", height: "h-[55vh] sm:h-[70vh] md:h-[80vh]" },
             {
                 src: image_r3_3,
                 alt: "Summer piece 7",
                 flex: "flex-[2]",
                 aspect: "aspect-square",
-                height: "h-[45vh] sm:h-[60vh] md:h-[70vh]"
+                height: "h-[55vh] sm:h-[70vh] md:h-[80vh]"
             },
         ],
         layout: "flex flex-col sm:flex-row gap-4",
