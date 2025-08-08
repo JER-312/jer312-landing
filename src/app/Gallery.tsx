@@ -1,7 +1,6 @@
 import SummerCollection from "./gallery/SummerCollection.tsx";
 import PreFallCollection from "./gallery/PreFallCollection.tsx";
 import WinterCollection from "./gallery/WinterCollection.tsx";
-import Footer from "./Footer.tsx";
 
 const getCurrentSeason = () => {
     const month = new Date().getMonth(); // 0-11
@@ -29,7 +28,6 @@ const Gallery = () => {
             {sortedCollections.map(({Component}, index) => (
                 <Component key={index}/>
             ))}
-            <Footer/>
         </div>
     );
 };

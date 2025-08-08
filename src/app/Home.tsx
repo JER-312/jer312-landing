@@ -5,7 +5,6 @@ import image4 from '../assets/trash/h-c-4.png';
 
 import {useNavigate} from 'react-router-dom';
 import Concept from "./home/Concept.tsx";
-import Footer from "./Footer.tsx";
 import Inspiration from "./home/Inspiration.tsx";
 
 function Home() {
@@ -122,11 +121,8 @@ function Home() {
                 </div>
             </section>
 
-
             <Inspiration/>
             <Concept/>
-            <Footer/>
-
         </div>
     );
 }
