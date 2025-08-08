@@ -27,14 +27,26 @@ const rows = [
     },
     {
         images: [
-            { src: image_r3_1, alt: "Summer piece 5", flex: "flex-[2]", aspect: "aspect-[2/3]", height: "h-[55vh] sm:h-[70vh] md:h-[80vh]" },
-            { src: image_r3_2, alt: "Summer piece 6", flex: "flex-[2]", aspect: "aspect-square", height: "h-[55vh] sm:h-[70vh] md:h-[80vh]" },
+            {
+                src: image_r3_1,
+                alt: "Summer piece 5",
+                flex: "flex-[2]",
+                aspect: "aspect-[2/3]",
+                height: "h-[65vh] sm:h-[80vh] md:h-[90vh]"
+            },
+            {
+                src: image_r3_2,
+                alt: "Summer piece 6",
+                flex: "flex-[2]",
+                aspect: "aspect-square",
+                height: "h-[65vh] sm:h-[80vh] md:h-[90vh]"
+            },
             {
                 src: image_r3_3,
                 alt: "Summer piece 7",
                 flex: "flex-[2]",
                 aspect: "aspect-square",
-                height: "h-[55vh] sm:h-[70vh] md:h-[80vh]"
+                height: "h-[65vh] sm:h-[80vh] md:h-[90vh]"
             },
         ],
         layout: "flex flex-col sm:flex-row gap-4",
