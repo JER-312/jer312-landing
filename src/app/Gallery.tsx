@@ -25,7 +25,7 @@ const Gallery = () => {
     );
 
     return (
-        <div className="flex flex-col py-[10vh] px-[5vw] gilmer-regular">
+        <div className="flex flex-col py-[10vh] px-[2vw] gilmer-regular">
             {sortedCollections.map(({Component}, index) => (
                 <Component key={index}/>
             ))}
