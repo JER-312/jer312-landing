@@ -17,18 +17,17 @@ function Home() {
     return (
         <div className="w-full min-h-screen">
 
-            {/* Hero Video Section - No overlay text */}
-            <section className="relative w-full bg-white">
-                <div className="relative w-full h-[100vh]">
+            <section className="relative w-full bg-white px-4 md:px-16">
+                <div className="relative w-full h-[100vh] rounded-2xl overflow-hidden">
                     <video
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-2xl"
                     >
                         {/*<source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.mp4" type={"video/mp4"} />*/}
-                        <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.webm" type={"video/webm"} />
+                        <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.webm" type={"video/webm"}/>
                         Your browser does not support the video tag.
                     </video>
                 </div>
