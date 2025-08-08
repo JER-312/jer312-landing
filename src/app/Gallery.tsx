@@ -1,6 +1,7 @@
 import SummerCollection from "./gallery/SummerCollection.tsx";
 import PreFallCollection from "./gallery/PreFallCollection.tsx";
 import WinterCollection from "./gallery/WinterCollection.tsx";
+import SpringCollection from "./gallery/SpringCollection.tsx";
 
 const getCurrentSeason = () => {
     const month = new Date().getMonth(); // 0-11
@@ -15,7 +16,7 @@ const Gallery = () => {
         {Component: SummerCollection, name: "Summer"},
         {Component: PreFallCollection, name: "PreFall"},
         {Component: WinterCollection, name: "Winter"},
-        // { Component: SummerCollection, name: "Spring" },
+        {Component: SpringCollection, name: "Spring"},
     ];
 
     const currentSeason = getCurrentSeason();
