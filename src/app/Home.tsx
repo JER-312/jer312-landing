@@ -27,7 +27,8 @@ function Home() {
                         playsInline
                         className="w-full h-full object-cover"
                     >
-                        <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.mp4" type="video/mp4" />
+                        {/*<source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.mp4" type={"video/mp4"} />*/}
+                        <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.webm" type={"video/webm"} />
                         Your browser does not support the video tag.
                     </video>
                 </div>
