@@ -1,4 +1,4 @@
-import mountain from "../../assets/mountain.svg";
+import mountain from "../../assets/images/home/mountain.svg";
 
 function Concept() {
     return (

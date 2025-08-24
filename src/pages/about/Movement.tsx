@@ -1,10 +1,10 @@
-import testBackground from '../../assets/background.svg'
+import background from '../../assets/background.svg'
 import movement from '../../assets/images/about/movement-video.avif';
 
 const Movement = () => (
     <section
         className="py-20 md:py-40 text-white bg-black bg-cover bg-center"
-        style={{ backgroundImage: `url(${testBackground})` }}
+        style={{ backgroundImage: `url(${background})` }}
     >
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 px-5 md:px-20">
             <div className="w-full md:w-2/5">

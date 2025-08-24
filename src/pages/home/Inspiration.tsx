@@ -1,9 +1,9 @@
-import feltMotif1 from "../../assets/felt-motif-1.png";
-import kolTorLake from "../../assets/kol-tor-lake.png";
-import beldemchiCape from "../../assets/beldemchi-cape.png";
-import feltMotif2 from "../../assets/felt-motif-2.png";
-import sonKolLake from "../../assets/son-kol-lake.png";
-import layeredHakama from "../../assets/layered-hakama.png";
+import feltMotif1 from "../../assets/images/home/felt-motif-1.avif";
+import kolTorLake from "../../assets/images/home/kol-tor-lake.avif";
+import beldemchiCape from "../../assets/images/home/beldemchi-cape.avif";
+import feltMotif2 from "../../assets/images/home/felt-motif-2.avif";
+import sonKolLake from "../../assets/images/home/son-kol-lake.avif";
+import layeredHakama from "../../assets/images/home/layered-hakama.avif";
 
 function Inspiration() {
     return (
