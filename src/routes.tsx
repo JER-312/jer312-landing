@@ -4,11 +4,19 @@ import Home from "./pages/home/Home.tsx";
 import About from "./pages/about/About.tsx";
 import Gallery from "./pages/gallery/Gallery.tsx";
 import Shop from "./pages/shop/Shop.tsx";
+import DeviceCheckWrapper from "./components/DeviceCheckWrapper.tsx";
+import MobileNotSupported from "./pages/MobileNotSupported.tsx";
 
 const routes: RouteObject[] = [
     {
         path: '/',
-        element: <Layout/>,
+        element: (
+            <DeviceCheckWrapper
+                largeScreenComponent={<Layout/>}
+                smallScreenComponent={<MobileNotSupported/>}
+                threshold={1024} // Optional: adjust threshold
+            />
+        ),
         children: [
             {index: true, element: <Home/>}, // Makes Home the default route
             {path: 'home', element: <Home/>},

@@ -50,3 +50,7 @@
     font-weight: 700;
     letter-spacing: -0.10em; /* Bold, noticeable touching */
 }
+
+.gilmer {
+    font-family: 'Gilmer', sans-serif;
+}

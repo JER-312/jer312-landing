@@ -1,32 +1,28 @@
-import halfLogo from '../../assets/images/about/half-logo.svg';
+import fullLogo from '../../assets/images/about/full-logo.svg';
 
 const Concept = () => (
-    <section className="flex flex-col md:flex-row bg-gray-50 py-10 md:py-20 px-4 md:px-20 relative">
-        <div className="md:w-2/3 py-4">
-            <h2 className="gilmer-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[140px] tracking-tight leading-tight mb-6">
+    <section className="flex flex-row py-20 px-20">
+        <div className="flex-1 flex flex-col justify-around items-center">
+            <h2 className="gilmer-bold text-8xl">
                 CONCEPT
             </h2>
-            <div className="flex flex-col gap-6 gilmer-regular text-sm md:text-base lg:text-lg tracking-tight">
+            <div className="flex flex-col gap-4 w-xl gilmer text-xl">
                 <p>
-                    The goal is to ensure that a person feels comfortable in these clothes through the
-                    customization of style and personal choice. Each individual will have the freedom to choose the
-                    style that
-                    suits them best, allowing them to develop their own uniqueness. This type of clothing can be
-                    seasonless and become the foundation of a wardrobe, often worn for a long time.
+                    The goal is to ensure that each person feels comfortable in these clothes through the customization
+                    of personal style and expression. Style becomes a medium through which people showcase their
+                    uniqueness.
                 </p>
                 <p>
-                    In the first clothing line, transformable outfits featuring Kyrgyz patterns and ornaments
-                    were created. All items were made in Kyrgyzstan using high-quality materials that ensure
-                    long-lasting wear, are comfortable on the body, and allow for ease of movement.
+                    This type of clothing is seasonless and can become the foundation of a wardrobe, often worn over a
+                    long period of time.
                 </p>
             </div>
         </div>
-        <div
-            className="md:w-1/3 flex items-center justify-end mt-8 md:mt-0 md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2">
+        <div className="flex-1 flex items-center justify-center">
             <img
-                src={halfLogo}
+                src={fullLogo}
                 alt="half logo"
-                className="w-full max-w-xs md:max-w-sm h-auto"
+                className="w-full max-w-sm h-auto"
             />
         </div>
     </section>
