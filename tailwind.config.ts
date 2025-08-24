@@ -6,10 +6,12 @@ export default {
             fontFamily: {
                 gilmer: ['Gilmer', 'sans-serif'],
             },
-            letterSpacing: {
-                'super-tight': '-0.07em', // Regular
-                'medium-tight': '-0.08em', // Medium, in between
-                'touch': '-0.10em',       // Bold
+            fontWeight: {
+                light: 300,
+                regular: 400,
+                medium: 500,
+                bold: 700,
+                heavy: 900,
             },
         },
     },

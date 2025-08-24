@@ -2,7 +2,7 @@ import Header from "./Header.tsx";
 import {Outlet} from "react-router-dom";
 import Footer from "./Footer.tsx";
 
-function AppLayout() {
+function Layout() {
     return (
         <div>
             <Header/>
@@ -14,4 +14,4 @@ function AppLayout() {
     );
 }
 
-export default AppLayout;
+export default Layout;

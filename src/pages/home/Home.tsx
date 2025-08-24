@@ -1,11 +1,11 @@
-import image1 from '../assets/trash/h-c-1.png';
-import image2 from '../assets/trash/h-c-2.png';
-import image3 from '../assets/trash/h-c-3.png';
-import image4 from '../assets/trash/h-c-4.png';
+import image1 from '../../assets/images/home/h-c-1.avif';
+import image2 from '../../assets/images/home/h-c-2.avif';
+import image3 from '../../assets/images/home/h-c-3.avif';
+import image4 from '../../assets/images/home/h-c-4.avif';
 
 import {useNavigate} from 'react-router-dom';
-import Concept from "./home/Concept.tsx";
-import Inspiration from "./home/Inspiration.tsx";
+import Concept from "./Concept.tsx";
+import Inspiration from "./Inspiration.tsx";
 
 function Home() {
     const navigate = useNavigate();
@@ -26,9 +26,7 @@ function Home() {
                         playsInline
                         className="w-full h-full object-cover rounded-2xl"
                     >
-                        {/*<source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.mp4" type={"video/mp4"} />*/}
                         <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.webm" type={"video/webm"}/>
-                        Your browser does not support the video tag.
                     </video>
                 </div>
             </section>
@@ -36,7 +34,7 @@ function Home() {
             {/* Introduction Section */}
             <section className="py-24 px-4 bg-white flex flex-col items-center justify-center text-left">
                 <p className="gilmer-regular text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl">
-                    <span className="gilmer-bold">TAN' ARS NATURA</span> is a felt-based collection where light,
+                    <span className="font-gilmer font-bold">TAN' ARS NATURA</span> is a felt-based collection where light,
                     movement, and nature shape each silhouette. Rooted in Kyrgyz craftsmanship, it reimagines ancestral
                     materials through contemporary forms. Modular garments offer transformation — a gesture toward
                     nomadic adaptability.
