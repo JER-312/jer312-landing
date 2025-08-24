@@ -19,8 +19,12 @@ function Footer() {
                 <div className="flex-1 flex flex-col justify-center items-center gap-4">
                     <p className="text-xl gilmer">Social Media</p>
                     <div className="flex flex-row gap-2">
-                        <img src={instagram} alt="instagram" className="h-8"/>
-                        <img src={linkedin} alt="linkedin" className="h-8"/>
+                        <a href="https://www.instagram.com/jer312.st/" target="_blank" rel="noopener noreferrer">
+                            <img src={instagram} alt="instagram" className="h-8"/>
+                        </a>
+                        <a href="https://www.linkedin.com/company/jer312/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} alt="linkedin" className="h-8"/>
+                        </a>
                         <img src={facebook} alt="facebook" className="h-8"/>
                     </div>
                 </div>
