@@ -1,4 +1,4 @@
-import { galleryImages } from "./galleryImages";
+import {galleryImages} from "./galleryImages";
 
 const SummerCollection = () => {
     const layout = "flex flex-col sm:flex-row gap-4";
@@ -16,10 +16,23 @@ const SummerCollection = () => {
     ];
 
     return (
-        <div className="mb-[10vh]">
-            <h2 className="text-4xl md:text-6xl gilmer-bold tracking-[-0.05em] mb-8">
-                Summer Collection
-            </h2>
+        <div>
+            <div className="flex flex-col gap-12 justify-center items-center p-20">
+                <p className="gilmer-medium text-4xl md:text-6xl gilmer-bold tracking-[-0.05em]">
+                    SUMMER COLLECTION
+                </p>
+                <div className="flex gap-12 gilmer-regular text-3xl">
+                    <span>3 RD EDITION</span>
+                    <span>BISHKEK</span>
+                    <span>JUNE 2024</span>
+                </div>
+                <p className="w-2xl gilmer-regular text-xl">
+                    This summer drop is rooted in community and togetherness. It is dedicated to warmth of friendship, and
+                    the visual culture of youth. At the center is an updated line of yurt caps, offering more options in
+                    color and shape: so each person can find their own unique piece. The ornaments are inspired by nomadic
+                    symbolism: flowing lines evoke harmony with connection to nature.
+                </p>
+            </div>
             <div className="flex flex-col gap-4">
                 {[[0], [1, 2, 3], [4, 5, 6], [7, 8], [9]].map((indices, rowIndex) => (
                     <div key={rowIndex} className={layout}>

@@ -1,4 +1,4 @@
-import { galleryImages } from "./galleryImages";
+import {galleryImages} from "./galleryImages";
 
 const WinterCollection = () => {
     const layout = "flex flex-col sm:flex-row gap-4";
@@ -18,10 +18,23 @@ const WinterCollection = () => {
     ];
 
     return (
-        <div className="mb-[10vh]">
-            <h2 className="text-4xl md:text-6xl gilmer-bold tracking-[-0.05em] mb-8">
-                Winter Collection
-            </h2>
+        <div>
+            <div className="flex flex-col gap-12 justify-center items-center p-20">
+                <p className="gilmer-medium text-4xl md:text-6xl gilmer-bold tracking-[-0.05em]">
+                    WINTER COLLECTION
+                </p>
+                <div className="flex gap-12 gilmer-regular text-3xl">
+                    <span>1 ST EDITION</span>
+                    <span>ROME</span>
+                    <span>FEBRUARY 2024</span>
+                </div>
+                <p className="w-2xl gilmer-regular text-xl">
+                    The first capsule by JER 312 debuted in Rome, though its artistic forms were born in Bishkek. The
+                    collection centers on a transformable bomber with graphic accents, along with the first prototypes
+                    of docker hats inspired by the silhouette of a yurt and the beldemchi, as a reimagined archival
+                    element of women's dress presented in new graphics.
+                </p>
+            </div>
             <div className="flex flex-col gap-4">
                 {[[0, 1], [2], [3, 4], [5], [6, 7], [8, 9, 10], [11]].map((indices, rowIndex) => (
                     <div key={rowIndex} className={layout}>

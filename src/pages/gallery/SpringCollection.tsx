@@ -1,4 +1,4 @@
-import { galleryImages } from "./galleryImages";
+import {galleryImages} from "./galleryImages";
 
 const SpringCollection = () => {
     const layout = "flex flex-col sm:flex-row gap-4";
@@ -17,10 +17,23 @@ const SpringCollection = () => {
     ];
 
     return (
-        <div className="mb-[10vh]">
-            <h2 className="text-4xl md:text-6xl gilmer-bold tracking-[-0.05em] mb-8">
-                Spring Collection
-            </h2>
+        <div>
+            <div className="flex flex-col gap-12 justify-center items-center p-20">
+                <p className="gilmer-medium text-4xl md:text-6xl gilmer-bold tracking-[-0.05em]">
+                    SPRING COLLECTION
+                </p>
+                <div className="flex gap-12 gilmer-regular text-3xl">
+                    <span>3 RD EDITION</span>
+                    <span>NEW YORK</span>
+                    <span>APRIL 2024</span>
+                </div>
+                <p className="w-2xl gilmer-regular text-xl">
+                    The second collection was shot in New York and explores the concept of ethno-urbanism. At this
+                    stage, we focused on creating premium cotton pieces and developed a new interpretation of a print
+                    based on the ancient Kyrgyz script. The essential T-shirt became a carrier of cultural identity and
+                    personal manifesto, bridging tradition and modernity.
+                </p>
+            </div>
             <div className="flex flex-col gap-4">
                 {[[0, 1], [2], [3, 4], [5], [6, 7], [8, 9], [10]].map((indices, rowIndex) => (
                     <div key={rowIndex} className={layout}>
