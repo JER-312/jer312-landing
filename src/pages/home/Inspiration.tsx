@@ -1,100 +1,59 @@
-import feltMotif1 from "../../assets/images/home/felt-motif-1.avif";
-import kolTorLake from "../../assets/images/home/kol-tor-lake.avif";
-import beldemchiCape from "../../assets/images/home/beldemchi-cape.avif";
-import feltMotif2 from "../../assets/images/home/felt-motif-2.avif";
-import sonKolLake from "../../assets/images/home/son-kol-lake.avif";
-import layeredHakama from "../../assets/images/home/layered-hakama.avif";
+import feltMotif1 from '../../assets/images/home/felt-motif-1.avif';
+import yssykKolLake from '../../assets/images/home/yssyk-kol-lake.avif';
+import craftsmanshipProcess from '../../assets/images/home/craftsmanship-process.avif';
+import finalPiece from '../../assets/images/home/final-piece.avif';
 
 function Inspiration() {
     return (
-        <>
-            <section className="py-24 bg-white">
-                <div className="w-full py-8">
-                    <h2 className="gilmer-bold text-5xl md:text-6xl mb-16 text-center">INSPIRATION</h2>
+        <section className="w-full flex flex-col items-center p-16">
+            <div className="flex flex-col items-center gap-6 pb-12">
+                <p className="text-5xl gilmer-bold">
+                    ORIGINS OF TEXTURE
+                </p>
+                <p className="text-xl gilmer tracking-tight w-xl">
+                    Color palettes and textures are drawn from seasonal Kyrgyz landscapes, transforming nature’s
+                    fluidity into tactile motifs.
+                </p>
+            </div>
 
-                    <p className="gilmer-medium text-xl md:text-2xl text-center mb-16 max-w-4xl mx-auto">
-                        Color palettes and textures are drawn from seasonal Kyrgyz landscapes, transforming nature's
-                        fluidity into tactile motifs.
-                    </p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1.5fr_1fr] gap-4 px-8 md:px-16">
-                        {/* Felt Motif #01 */}
-                        <div className="flex flex-col items-center w-full">
-                            <h3 className="gilmer-regular text-2xl mb-4 text-center">Felt Motif #01</h3>
-                            <div className="overflow-hidden w-full h-[60vh]">
-                                <img
-                                    src={feltMotif1}
-                                    alt="Felt Motif #01 - Inspired by Kyrgyz seasonal landscapes"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Köl-Tor Lake */}
-                        <div className="flex flex-col items-center w-full">
-                            <h3 className="gilmer-regular text-2xl mb-4 text-center">Köl-Tor Lake</h3>
-                            <div className="overflow-hidden w-full h-[60vh]">
-                                <img
-                                    src={kolTorLake}
-                                    alt="Köl-Tor Lake - Reflecting Kyrgyz natural fluidity"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Beldemchi Cape */}
-                        <div className="flex flex-col items-center w-full">
-                            <h3 className="gilmer-regular text-2xl mb-4 text-center">Beldemchi Cape</h3>
-                            <div className="overflow-hidden w-full h-[60vh]">
-                                <img
-                                    src={beldemchiCape}
-                                    alt="Beldemchi Cape - A tactile motif from Kyrgyz nature"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1.5fr_1fr] gap-4 px-8 md:px-16 mt-24">
-                        {/* Felt Motif #02 */}
-                        <div className="flex flex-col items-center w-full">
-                            <h3 className="gilmer-regular text-2xl mb-4 text-center">Felt Motif #02</h3>
-                            <div className="overflow-hidden w-full h-[60vh]">
-                                <img
-                                    src={feltMotif2}
-                                    alt="Felt Motif #02 - Inspired by Kyrgyz seasonal landscapes"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Son'-Köl Lake */}
-                        <div className="flex flex-col items-center w-full">
-                            <h3 className="gilmer-regular text-2xl mb-4 text-center">Son'-Köl Lake</h3>
-                            <div className="overflow-hidden w-full h-[60vh]">
-                                <img
-                                    src={sonKolLake}
-                                    alt="Son'-Köl Lake - Reflecting Kyrgyz natural fluidity"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Layered Hakama */}
-                        <div className="flex flex-col items-center w-full">
-                            <h3 className="gilmer-regular text-2xl mb-4 text-center">Layered Hakama</h3>
-                            <div className="overflow-hidden w-full h-[60vh]">
-                                <img
-                                    src={layeredHakama}
-                                    alt="Layered Hakama - A tactile motif from Kyrgyz nature"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-                    </div>
+            <div className="flex flex-row gap-8 py-12">
+                <div className="flex-5 flex flex-col gap-4">
+                    <img src={feltMotif1} alt="felt motif" className="w-2xl h-auto"/>
+                    <p className="text-lg gilmer-medium">Felt Motif #01</p>
                 </div>
-            </section>
-        </>
+                <div className="flex-4 flex flex-col justify-between">
+                    <p className="text-md gilmer tracking-tight">
+                        At the core of the collection lies felt — a material deeply rooted in nomadic heritage and
+                        shaped entirely by hand. Inspired by the fluid surfaces of Kyrgyz lakes, its depth and movement
+                        are reima-gined in a timeless material born from tradition.
+                    </p>
+                    <img src={yssykKolLake} alt="Yssyk Kol Lake" className="w-xl h-auto"/>
+                    <p className="text-lg gilmer-medium">Issyk-Köl Lake</p>
+                </div>
+            </div>
+
+            <div className="flex flex-row gap-8">
+                <div className="flex-8 flex flex-col gap-4">
+                    <img src={craftsmanshipProcess} alt="Craftsmanship Process"
+                         className="w-full h-[36rem] object-cover"/>
+                    <p className="text-lg gilmer-medium">Craftsmanship Process</p>
+                </div>
+                <div className="flex-3 flex flex-col gap-4">
+                    <img src={finalPiece} alt="Final Piece" className="w-full h-[36rem] object-cover"/>
+                    <p className="text-lg gilmer-medium">Final piece</p>
+
+                </div>
+            </div>
+
+            <div className="w-full pt-6 pb-12">
+                <p className="text-xl gilmer tracking-tighter">
+                    We used an ancient felting technique, a savoir-faire passed down through generations, to shape wool
+                    into layered compositions. Each piece is the result of careful craftsmanship, echoing the rhythm of
+                    water and air and transforming traditional practice into contemporary form. A quiet dialogue emerges
+                    within each fiber, bridging past and present.
+                </p>
+            </div>
+        </section>
     )
 }
 

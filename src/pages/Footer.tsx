@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="py-8 px-4 bg-black text-white">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto grid grid-cols-3 gap-6">
                 {/* Company Info */}
                 <div>
                     <h3 className="gilmer-regular text-2xl mb-2">JER 312</h3>
@@ -20,8 +20,8 @@ function Footer() {
 
                 {/* Social Media */}
                 <div>
-                    <h4 className="gilmer-regular text-2xl mb-2">Follow</h4>
-                    <div className="flex space-x-4 gilmer-regular text-base">
+                    <h4 className="gilroy-regular text-2xl mb-2">Follow</h4>
+                    <div className="flex space-x-4 gilroy-regular text-base">
                         <a href="#" className="hover:underline">Instagram</a>
                         <a href="#" className="hover:underline">LinkedIn</a>
                         <a href="#" className="hover:underline">Facebook</a>

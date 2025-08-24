@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import logo from "../assets/jer312-logo.svg"; // Adjust the path as needed
+import {Link} from "react-router-dom";
+import logo from "../assets/jer312-logo.svg";
 
 function Header() {
     return (
-        <header className="bg-white w-full px-6 lg:pl-4"> {/* Reduced left padding on large screens */}
+        <header className="bg-white w-full px-16">
             <nav className="flex justify-between items-center py-6 max-w-7xl mx-auto">
                 {/* Logo on the left, clickable to navigate to home */}
                 <div className="flex items-center">
@@ -11,7 +11,7 @@ function Header() {
                         <img
                             src={logo}
                             alt="Jer312 Logo"
-                            className="h-12 w-auto md:h-14 lg:h-18"
+                            className="h-18 w-auto"
                         />
                     </Link>
                 </div>
@@ -20,19 +20,19 @@ function Header() {
                 <div className="flex space-x-12">
                     <Link
                         to="/about"
-                        className="gilmer-regular text-black uppercase text-xl md:text-2xl lg:text-3xl"
+                        className="gilmer-regular text-black uppercase text-3xl"
                     >
                         About
                     </Link>
                     <Link
                         to="/gallery"
-                        className="gilmer-regular text-black uppercase text-xl md:text-2xl lg:text-3xl"
+                        className="gilmer-regular text-black uppercase text-3xl"
                     >
                         Gallery
                     </Link>
                     <Link
                         to="/shop"
-                        className="gilmer-regular text-black uppercase text-xl md:text-2xl lg:text-3xl"
+                        className="gilmer-regular text-black uppercase text-3xl"
                     >
                         Shop
                     </Link>
