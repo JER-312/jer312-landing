@@ -13,7 +13,7 @@ function Home() {
                         muted
                         className="w-full h-full object-cover rounded-xl"
                     >
-                        <source src="https://jer312.s3.eu-central-1.amazonaws.com/jer312.webm" type="video/webm"/>
+                        <source src="/jer312.mp4" type="video/mp4"/>
                     </video>
                 </div>
             </section>
