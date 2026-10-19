@@ -1,6 +1,6 @@
 import fullLogo from '../../assets/images/about/full-logo.svg';
 
-const Concept = () => (
+const BrandConcept = () => (
     <section className="flex flex-row py-20 px-20">
         <div className="flex-1 flex flex-col justify-around items-center">
             <h2 className="gilmer-bold text-8xl">
@@ -28,4 +28,4 @@ const Concept = () => (
     </section>
 );
 
-export default Concept;
+export default BrandConcept;

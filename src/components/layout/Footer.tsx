@@ -1,7 +1,7 @@
-import jer312 from '../assets/images/footer/jer312.svg'
-import instagram from '../assets/images/footer/instagram.svg'
-import linkedin from '../assets/images/footer/linkedin.svg'
-import facebook from '../assets/images/footer/facebook.svg'
+import jer312 from '../../assets/images/footer/jer312.svg'
+import instagram from '../../assets/images/footer/instagram.svg'
+import linkedin from '../../assets/images/footer/linkedin.svg'
+import facebook from '../../assets/images/footer/facebook.svg'
 
 function Footer() {
     const currentYear = new Date().getFullYear();

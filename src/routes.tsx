@@ -1,5 +1,5 @@
 import {Navigate, RouteObject} from 'react-router-dom';
-import Layout from "./pages/Layout.tsx";
+import Layout from "./components/layout/Layout.tsx";
 import Home from "./pages/home/Home.tsx";
 import About from "./pages/about/About.tsx";
 import Gallery from "./pages/gallery/Gallery.tsx";

@@ -1,6 +1,6 @@
 import mountain from "../../assets/images/home/mountain.svg";
 
-function Concept() {
+function ValueConcept() {
     return (
         <>
             {/* Concept Section with Mountain */}
@@ -43,4 +43,4 @@ function Concept() {
     )
 }
 
-export default Concept;
+export default ValueConcept;

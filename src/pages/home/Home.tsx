@@ -1,4 +1,4 @@
-import Concept from "./Concept.tsx";
+import ValueConcept from "./ValueConcept.tsx";
 import Inspiration from "./Inspiration.tsx";
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
             </div>
 
             <Inspiration/>
-            <Concept/>
+            <ValueConcept/>
         </div>
     );
 }
