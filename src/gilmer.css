@@ -1,36 +1,41 @@
 @font-face {
     font-family: 'Gilmer';
-    src: url('./assets/fonts/Gilmer-Font/Gilmer-Light.otf') format('opentype');
+    src: url('./assets/fonts/Gilmer-Font/Gilmer-Light.woff2') format('woff2'), url('./assets/fonts/Gilmer-Font/Gilmer-Light.otf') format('opentype');
     font-weight: 300; /* Light */
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('./assets/fonts/Gilmer-Font/Gilmer-Regular.otf') format('opentype');
+    src: url('./assets/fonts/Gilmer-Font/Gilmer-Regular.woff2') format('woff2'), url('./assets/fonts/Gilmer-Font/Gilmer-Regular.otf') format('opentype');
     font-weight: 400; /* Regular */
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('./assets/fonts/Gilmer-Font/Gilmer-Medium.otf') format('opentype');
+    src: url('./assets/fonts/Gilmer-Font/Gilmer-Medium.woff2') format('woff2'), url('./assets/fonts/Gilmer-Font/Gilmer-Medium.otf') format('opentype');
     font-weight: 500; /* Medium */
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('./assets/fonts/Gilmer-Font/Gilmer-Bold.otf') format('opentype');
+    src: url('./assets/fonts/Gilmer-Font/Gilmer-Bold.woff2') format('woff2'), url('./assets/fonts/Gilmer-Font/Gilmer-Bold.otf') format('opentype');
     font-weight: 700; /* Bold */
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('./assets/fonts/Gilmer-Font/Gilmer-Heavy.otf') format('opentype');
+    src: url('./assets/fonts/Gilmer-Font/Gilmer-Heavy.woff2') format('woff2'), url('./assets/fonts/Gilmer-Font/Gilmer-Heavy.otf') format('opentype');
     font-weight: 900; /* Heavy */
     font-style: normal;
+    font-display: swap;
 }
 
 .gilmer-regular {

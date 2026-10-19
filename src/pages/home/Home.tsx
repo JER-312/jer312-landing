@@ -14,6 +14,9 @@ function Home() {
                         autoPlay
                         loop
                         muted
+                        playsInline
+                        preload="metadata"
+                        poster="/jer312-poster.avif"
                         className="w-full h-full object-cover rounded-xl"
                     >
                         <source src="/jer312.mp4" type="video/mp4"/>

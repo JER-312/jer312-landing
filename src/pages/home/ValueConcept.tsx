@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import mountain from "../../assets/images/home/mountain.svg";
+import mountain from "../../assets/images/home/mountain.avif";
 
 function ValueConcept() {
     return (
