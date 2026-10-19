@@ -1,5 +1,6 @@
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import logo from "../../assets/jer312-logo.svg";
+import {navLinks} from "../../content/site.ts";
 
 function Header() {
     return (
@@ -18,24 +19,17 @@ function Header() {
 
                 {/* Navigation links on the right */}
                 <div className="flex space-x-12">
-                    <Link
-                        to="/about"
-                        className="gilmer-regular text-black uppercase text-3xl"
-                    >
-                        About
-                    </Link>
-                    <Link
-                        to="/gallery"
-                        className="gilmer-regular text-black uppercase text-3xl"
-                    >
-                        Gallery
-                    </Link>
-                    <Link
-                        to="/shop"
-                        className="gilmer-regular text-black uppercase text-3xl"
-                    >
-                        Shop
-                    </Link>
+                    {navLinks.map(({to, label}) => (
+                        <NavLink
+                            key={to}
+                            to={to}
+                            className={({isActive}) =>
+                                `gilmer-regular text-black uppercase text-3xl${isActive ? " underline underline-offset-8 decoration-2" : ""}`
+                            }
+                        >
+                            {label}
+                        </NavLink>
+                    ))}
                 </div>
             </nav>
         </header>
