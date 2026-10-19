@@ -54,10 +54,10 @@ function MobileMenu() {
                 role="dialog"
                 aria-modal="true"
                 aria-label="Menu"
-                className={`${open ? "flex" : "hidden"} fixed inset-0 z-50 flex-col bg-white px-4`}
+                className={`${open ? "flex" : "hidden"} fixed inset-0 z-50 flex-col overflow-y-auto bg-white px-5`}
             >
                 <div className="flex justify-between items-center py-4">
-                    <Link to="/" onClick={close}>
+                    <Link to="/" onClick={close} className="min-w-11">
                         <img src={logo} alt="Jer312 Logo" className="h-12 w-auto"/>
                     </Link>
                     <button

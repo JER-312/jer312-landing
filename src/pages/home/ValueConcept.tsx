@@ -10,7 +10,7 @@ function ValueConcept() {
                 <div className="flex items-end bg-white">
                     <div className="w-full pt-16 lg:pt-[25vh] bg-gradient-to-b from-black via-black to-white"
                          style={{backgroundImage: 'linear-gradient(to bottom, black 97%, white 3%)'}}>
-                        <img src={mountain} alt="mountain" className="w-full h-auto max-lg:h-[40svh] max-lg:object-cover"/>
+                        <img src={mountain} alt="mountain" className="w-full h-auto max-lg:min-h-[40svh] max-lg:object-cover"/>
                     </div>
                 </div>
 

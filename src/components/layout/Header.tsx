@@ -5,11 +5,11 @@ import MobileMenu from "./MobileMenu.tsx";
 
 function Header() {
     return (
-        <header className="bg-white w-full px-4 lg:px-16">
+        <header className="bg-white w-full px-5 lg:px-16">
             <nav className="flex justify-between items-center py-4 lg:py-6 max-w-7xl mx-auto">
                 {/* Logo on the left, clickable to navigate to home */}
                 <div className="flex items-center">
-                    <Link to="/">
+                    <Link to="/" className="max-lg:min-w-11">
                         <img
                             src={logo}
                             alt="Jer312 Logo"

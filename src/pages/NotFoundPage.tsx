@@ -6,7 +6,7 @@ function NotFoundPage() {
             <title>Page not found — JER312</title>
             <meta name="description" content="This page does not exist."/>
             <h1 className="gilmer-regular text-4xl">Page not found</h1>
-            <Link to="/" className="gilmer-medium text-xl underline underline-offset-4">
+            <Link to="/" className="gilmer-medium text-xl underline underline-offset-4 max-lg:py-2">
                 Back to home
             </Link>
         </div>

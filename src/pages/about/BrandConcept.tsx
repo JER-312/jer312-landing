@@ -1,7 +1,7 @@
 import fullLogo from '../../assets/images/about/full-logo.svg';
 
 const BrandConcept = () => (
-    <section className="flex flex-col lg:flex-row max-lg:gap-12 py-12 lg:py-20 px-6 lg:px-20">
+    <section className="flex flex-col lg:flex-row max-lg:gap-12 py-12 lg:py-20 px-5 lg:px-20">
         <div className="flex-1 flex flex-col justify-around items-center max-lg:gap-8">
             <h2 className="gilmer-bold text-5xl sm:text-7xl lg:text-8xl">
                 CONCEPT

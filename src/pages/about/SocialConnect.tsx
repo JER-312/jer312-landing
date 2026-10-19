@@ -2,7 +2,7 @@ import image from '../../assets/images/about/i.avif';
 
 const SocialConnect = () => {
     return (
-        <section className="flex flex-col lg:flex-row px-6 lg:px-24 py-16 lg:py-36 bg-black">
+        <section className="flex flex-col lg:flex-row px-5 lg:px-24 py-16 lg:py-36 bg-black">
             <div className="flex-1 flex justify-center items-center mb-8 lg:mb-0">
                 <img
                     src={image}

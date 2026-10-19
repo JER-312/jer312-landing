@@ -10,7 +10,7 @@ const CollectionSection = ({collection}: { collection: Collection }) => {
 
     return (
         <div>
-            <div className="flex flex-col gap-8 justify-center items-center px-2 py-12 sm:px-12 sm:py-16 lg:gap-12 lg:p-20">
+            <div className="flex flex-col gap-8 justify-center items-center py-12 sm:px-12 sm:py-16 lg:gap-12 lg:p-20">
                 {title.length > 1 ? (
                     <h2 className={`flex flex-col gap-3 items-center ${titleClass}`}>
                         {title.map((line) => <span key={line}>{line}</span>)}

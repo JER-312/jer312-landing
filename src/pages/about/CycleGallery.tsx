@@ -28,9 +28,9 @@ const CycleGallery = () => {
     };
 
     return (
-        <section className="flex flex-col py-12 lg:py-20 px-4 lg:px-40 gap-8">
+        <section className="flex flex-col py-12 lg:py-20 px-5 lg:px-40 gap-8">
             <div className="flex-1 flex flex-col justify-center items-center">
-                <div className="w-full max-lg:px-2">
+                <div className="w-full">
                     <div className="flex flex-col gap-4 gilmer text-lg lg:text-xl">
                         <p>
                             The first clothing line features transformable outfits adorned with ancestral patterns and
