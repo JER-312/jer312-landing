@@ -109,3 +109,45 @@
 @media (prefers-reduced-motion: reduce) {
     .jer-menu-link { animation: none; }
 }
+/* Gallery image rows (pages/gallery/CollectionSection): each tile is unveiled from the bottom
+   while its photo settles from a slight zoom; tiles stagger via --jer-d. The curtain is two
+   opposite translates (.jer-zoom down 100%, its img up 100%) inside the tile's overflow clip, so
+   the photo stays put while its visible part grows upward: same look as a clip-path wipe, but
+   composited. translate/scale are separate properties so the hover scale on .jer-zoom never
+   fights the reveal. Hover is paused while Gallery has .jer-scrolling. Resting state: no transforms. */
+.jer-row .jer-zoom {
+    translate: 0 100%;
+    transition: translate 1100ms cubic-bezier(0.76, 0, 0.24, 1) var(--jer-d, 0ms);
+}
+.jer-row .jer-zoom img {
+    translate: 0 -100%;
+    scale: 1.18;
+    transition: translate 1100ms cubic-bezier(0.76, 0, 0.24, 1) var(--jer-d, 0ms), scale 1400ms cubic-bezier(0.22, 1, 0.36, 1) var(--jer-d, 0ms);
+}
+.jer-row.jer-in .jer-zoom, .jer-row.jer-in .jer-zoom img {
+    translate: none;
+    scale: none;
+}
+.jer-row.jer-in:not(.jer-done) .jer-zoom {
+    will-change: translate;
+}
+.jer-row.jer-in:not(.jer-done) .jer-zoom img {
+    will-change: translate, scale;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .jer-row .jer-zoom {
+        transition: translate 1100ms cubic-bezier(0.76, 0, 0.24, 1) var(--jer-d, 0ms), scale 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .jer-gallery:not(.jer-scrolling) .jer-row.jer-done .jer-tile:hover .jer-zoom {
+        scale: 1.04;
+    }
+    .jer-row .jer-tile {
+        transition: opacity 500ms ease;
+    }
+    .jer-gallery:not(.jer-scrolling) .jer-row.jer-done:has(.jer-tile:hover) .jer-tile:not(:hover) {
+        opacity: 0.85;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .jer-row .jer-zoom, .jer-row .jer-zoom img { transition: none; translate: none; scale: none; }
+}
