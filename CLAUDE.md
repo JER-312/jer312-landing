@@ -1,6 +1,6 @@
 # jer312-landing
 
-Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Desktop-only SPA: Home, About, Gallery, Shop (placeholder), 404.
+Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Responsive SPA (mobile, tablet, desktop): Home, About, Gallery, Shop (placeholder), 404.
 
 ## Commands
 - Install: `npm install` (package-lock.json present, use npm)
@@ -18,9 +18,10 @@ Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Desk
 
 ## Structure
 - `src/main.tsx`: mounts `RouterProvider` with routes from `src/routes.tsx`; removes the static `<meta name="description">` from `index.html` so pages own it
-- `src/routes.tsx`: root `/` wrapped in `DeviceCheckWrapper` (width < 1024 renders `pages/MobileNotSupported.tsx`, else `components/layout/Layout.tsx`)
+- `src/routes.tsx`: root `/` renders `components/layout/Layout.tsx`
   - children: index -> Home, `about`, `gallery`, `shop`; `*` -> `pages/NotFoundPage.tsx`
-- `src/components/layout/`: `Layout` (`Header` + `<main><Outlet/></main>` + `Footer` + `<ScrollRestoration/>`), `Header`, `Footer`
+- `src/components/layout/`: `Layout` (`Header` + `<main><Outlet/></main>` + `Footer` + `<ScrollRestoration/>`), `Header`, `Footer`, `MobileMenu`
+  - `MobileMenu`: hamburger shown below `lg`; full-screen dialog (scrolls if links don't fit), closes on Escape, link click, or growing to ≥1024px; locks body scroll while open
 - `src/content/`: site data
   - `site.ts`: nav links, socials, contact email (Header and Footer render from it)
   - `collections.ts`: gallery data. `Collection` = id, title lines, edition, city, date, description, `releasedAt` (ISO, sort key), `rows` of images (src, alt, flex, aspect, height classes)
@@ -39,10 +40,15 @@ Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Desk
 - Images imported as modules from `src/assets/...`
 - Per-page SEO: each page renders its own `<title>` ("Page — JER312") and `<meta name="description">` in JSX; React 19 hoists them to `<head>` (no helmet)
 - One `<h1>` per page (`sr-only` when there is no visible title); section headings are `<h2>`
+- Responsive convention:
+  - Mobile-first base classes; desktop values at `lg:` (1024px)
+  - Desktop (≥1024px) must stay pixel-identical when changing mobile styles
+  - Use `max-lg:`/`max-sm:` where a base class would also change desktop (e.g. `max-lg:gap-10`, `max-lg:py-2`)
+  - Mobile side gutter is 20px (`px-5`); tap targets at least 44x44px below `lg`
+  - Gallery: below `sm`, multi-image rows become a 2-column grid of equal 3:4 tiles; odd rows let the first tile span both columns (`CollectionSection.tsx`)
 - Commit messages: `<type>: <description>` (feat, fix, refactor, perf, docs, chore)
 
 ## Gotchas
-- Mobile gate is intentional: below 1024px the whole site shows `MobileNotSupported`. Layouts use fixed widths (`w-2xl`, `px-16`)
 - Summer and Spring collections both say "3 RD EDITION": TODO in `collections.ts`, confirm with client
 - Footer Facebook icon has no link (no URL known)
 - `index.html` has no `og:image`/`og:url` yet: production domain unknown (TODO comment there)
