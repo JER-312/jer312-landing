@@ -48,6 +48,17 @@ Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Resp
   - Gallery: below `sm`, multi-image rows become a 2-column grid of equal 3:4 tiles; odd rows let the first tile span both columns (`CollectionSection.tsx`)
 - Commit messages: `<type>: <description>` (feat, fix, refactor, perf, docs, chore)
 
+## Motion
+- `components/IntroLoader.tsx` (mounted in `main.tsx`): logo "stitch" overlay, once per session (`sessionStorage` `jer:intro-seen`), capped at 2s
+  - On `/` it waits for `jer:hero-ready` (Home dispatches it, sets `window.__jerHeroReady`)
+  - When it starts leaving it sets `window.__jerIntroDone` and dispatches `jer:intro-done`; without the intro, the flag is set at load
+- `hooks/useInView.ts`: `useInView<T>({once, rootMargin, threshold})` returns `[ref, inView]`; waits for `jer:intro-done` (3s fallback)
+- `components/motion/SplitText.tsx`: letters rise from a per-word clip, then swap back to plain text (kerning kept). Plain text only
+- `components/motion/Reveal.tsx`: renders `as` itself, 24px rise + fade. Don't put it on elements with their own transform/transition
+- Gallery image rows (`CollectionSection` `ImageRow`, `.jer-row` in `index.css`): bottom-up curtain + photo zoom settle; hover zoom/dim pauses while scrolling (`.jer-scrolling`)
+- Classes live in `src/index.css` (`.jer-*`). Animate only transform/translate/scale, opacity and clip-path; the resting state must match the static markup (no layout shift)
+- Everything must respect `prefers-reduced-motion: reduce` (content visible at once, no hover motion)
+
 ## Gotchas
 - Summer and Spring collections both say "3 RD EDITION": TODO in `collections.ts`, confirm with client
 - Footer Facebook icon has no link (no URL known)
