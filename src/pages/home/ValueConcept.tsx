@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
 import mountain from "../../assets/images/home/mountain.avif";
-import WoolParticles from "../../components/WoolParticles.tsx";
 
 function ValueConcept() {
     return (
@@ -9,15 +8,14 @@ function ValueConcept() {
             <section className="relative pb-16 lg:pb-[50vh]">
                 {/* Background with mountain */}
                 <div className="flex items-end bg-white">
-                    <div className="w-full bg-gradient-to-b from-black via-black to-white"
+                    <div className="w-full pt-16 lg:pt-[25vh] bg-gradient-to-b from-black via-black to-white"
                          style={{backgroundImage: 'linear-gradient(to bottom, black 97%, white 3%)'}}>
-                        <WoolParticles className="h-[60svh] lg:h-[80vh]"/>
                         <img src={mountain} alt="mountain" className="w-full h-auto max-lg:min-h-[40svh] max-lg:object-cover"/>
                     </div>
                 </div>
 
                 {/* Content */}
-                <div className="lg:absolute left-0 flex flex-col items-end w-full lg:top-[125vh] px-5 md:px-12 lg:px-20">
+                <div className="lg:absolute left-0 flex flex-col items-end w-full lg:top-[70vh] px-5 md:px-12 lg:px-20">
                     <div className="flex flex-col items-end w-full max-lg:gap-6 lg:flex-row">
                         <div className="flex flex-col items-start w-full lg:w-1/2">
                             <h2 className="flex flex-col items-start">
