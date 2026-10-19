@@ -1,2 +1,47 @@
 @import "tailwindcss";
 @import "./gilmer.css";
+/* IntroLoader: logo stitch timeline (total 1200ms, see STITCH_MS) */
+.jer-stitch-reveal {
+    stroke-dasharray: 1 1;
+    stroke-dashoffset: 1;
+    animation: jer-stitch-draw 850ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+.jer-stitch-dash {
+    animation: jer-fade-out 300ms ease 850ms forwards;
+}
+.jer-stitch-solid {
+    opacity: 0;
+    animation: jer-fade-in 300ms ease 850ms forwards;
+}
+.jer-stitch-fill {
+    opacity: 0;
+    animation: jer-fade-in 350ms ease 850ms forwards;
+}
+.jer-intro {
+    transition: transform 600ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+.jer-intro-out {
+    transform: translateY(-100%);
+}
+.jer-intro-out .jer-intro-logo {
+    transition: opacity 400ms ease, transform 600ms cubic-bezier(0.76, 0, 0.24, 1);
+    opacity: 0;
+    transform: translateY(-24px);
+}
+@keyframes jer-stitch-draw {
+    to { stroke-dashoffset: 0; }
+}
+@keyframes jer-fade-in {
+    to { opacity: 1; }
+}
+@keyframes jer-fade-out {
+    to { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .jer-stitch-reveal { animation: none; stroke-dashoffset: 0; }
+    .jer-stitch-dash { animation: none; opacity: 0; }
+    .jer-stitch-solid, .jer-stitch-fill { animation: none; opacity: 1; }
+    .jer-intro { transition: opacity 300ms ease; }
+    .jer-intro-out { transform: none; opacity: 0; }
+    .jer-intro-out .jer-intro-logo { transform: none; }
+}

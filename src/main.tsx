@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import routes from "./routes.tsx";
+import IntroLoader from "./components/IntroLoader.tsx";
 
 const router = createBrowserRouter(routes);
 
@@ -12,5 +13,6 @@ document.querySelector('meta[name="description"]')?.remove();
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <RouterProvider router={router} />
+        <IntroLoader />
     </StrictMode>
 );
