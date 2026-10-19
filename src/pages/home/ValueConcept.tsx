@@ -1,5 +1,7 @@
 import {Link} from "react-router-dom";
 import mountain from "../../assets/images/home/mountain.avif";
+import SplitText from "../../components/motion/SplitText.tsx";
+import Reveal from "../../components/motion/Reveal.tsx";
 
 function ValueConcept() {
     return (
@@ -19,18 +21,18 @@ function ValueConcept() {
                     <div className="flex flex-col items-end w-full max-lg:gap-6 lg:flex-row">
                         <div className="flex flex-col items-start w-full lg:w-1/2">
                             <h2 className="flex flex-col items-start">
-                                <span className="pt-5 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl">VALUE</span>
-                                <span className="pt-2 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl">STORY</span>
-                                <span className="pt-2 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl">CONCEPT</span>
+                                <SplitText className="pt-5 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl" text="VALUE"/>
+                                <SplitText className="pt-2 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl" text="STORY" delay={180}/>
+                                <SplitText className="pt-2 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl" text="CONCEPT" delay={360}/>
                             </h2>
                         </div>
 
                         <div className="flex flex-col items-start text-left w-full lg:w-1/2">
-                            <p className="p-1 text-xl gilmer-medium md:text-2xl lg:text-3xl">
+                            <Reveal as="p" delay={400} className="p-1 text-xl gilmer-medium md:text-2xl lg:text-3xl">
                                 «At JER 312, we weave cultural heritage and innovative design into
                                 multifunctional garments, empowering you to express your unique
                                 style with creativity and sustainability.»
-                            </p>
+                            </Reveal>
                         </div>
                     </div>
 

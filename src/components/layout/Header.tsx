@@ -28,7 +28,10 @@ function Header() {
                                 `gilmer-regular text-black uppercase text-3xl${isActive ? " underline underline-offset-8 decoration-2" : ""}`
                             }
                         >
-                            {label}
+                            <span className="jer-roll">
+                                <span>{label}</span>
+                                <span aria-hidden="true">{label}</span>
+                            </span>
                         </NavLink>
                     ))}
                 </div>

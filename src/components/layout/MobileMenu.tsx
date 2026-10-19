@@ -73,13 +73,14 @@ function MobileMenu() {
                     </button>
                 </div>
                 <nav className="flex-1 flex flex-col justify-center items-center gap-10 pb-16">
-                    {navLinks.map(({to, label}) => (
+                    {navLinks.map(({to, label}, i) => (
                         <NavLink
                             key={to}
                             to={to}
                             onClick={close}
+                            style={{animationDelay: `${100 + i * 80}ms`}}
                             className={({isActive}) =>
-                                `gilmer-regular text-black uppercase text-5xl${isActive ? " underline underline-offset-8 decoration-2" : ""}`
+                                `jer-menu-link gilmer-regular text-black uppercase text-5xl${isActive ? " underline underline-offset-8 decoration-2" : ""}`
                             }
                         >
                             {label}

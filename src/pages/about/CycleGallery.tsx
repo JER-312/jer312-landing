@@ -5,6 +5,7 @@ import tcol3 from '../../assets/images/about/t-col-3.avif';
 import tcol4 from '../../assets/images/about/t-col-4.avif';
 import tcol5 from '../../assets/images/about/t-col-5.avif';
 import tcol6 from '../../assets/images/about/t-col-6.avif';
+import Reveal from "../../components/motion/Reveal.tsx";
 
 const images = [tcol1, tcol2, tcol3, tcol4, tcol5, tcol6];
 
@@ -32,15 +33,15 @@ const CycleGallery = () => {
             <div className="flex-1 flex flex-col justify-center items-center">
                 <div className="w-full">
                     <div className="flex flex-col gap-4 gilmer text-lg lg:text-xl">
-                        <p>
+                        <Reveal as="p">
                             The first clothing line features transformable outfits adorned with ancestral patterns and
                             ornaments. All pieces were crafted in Kyrgyzstan using high-quality materials that ensure durability,
                             provide comfort against the body, and allow for ease of movement.
-                        </p>
+                        </Reveal>
                     </div>
                 </div>
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center">
+            <Reveal delay={150} className="flex-1 flex flex-col items-center justify-center">
                 <div
                     className="relative w-full"
                     onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
@@ -65,7 +66,7 @@ const CycleGallery = () => {
                         →
                     </button>
                 </div>
-            </div>
+            </Reveal>
         </section>
     );
 };

@@ -74,3 +74,38 @@
 @media (prefers-reduced-motion: reduce) {
     .jer-split-letter, .jer-reveal { transition: none; transform: none; opacity: 1; }
 }
+/* Header nav: label rolls up and a copy rolls in from below (hover devices only).
+   Both copies carry the link's underline; clip-path hides the copy without affecting layout. */
+.jer-roll {
+    display: inline-block;
+    position: relative;
+    text-decoration: inherit;
+    clip-path: inset(-0.3em -0.2em -0.3em -0.2em);
+}
+.jer-roll > span {
+    display: inline-block;
+    text-decoration: inherit;
+}
+.jer-roll > span + span {
+    position: absolute;
+    left: 0;
+    top: 1.8em;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .jer-roll > span {
+        transition: transform 500ms cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    a:hover > .jer-roll > span {
+        transform: translateY(-1.8em);
+    }
+}
+/* MobileMenu: links rise in each time the dialog opens (display none -> flex restarts the animation) */
+.jer-menu-link {
+    animation: jer-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes jer-rise {
+    from { opacity: 0; transform: translateY(24px); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .jer-menu-link { animation: none; }
+}

@@ -1,6 +1,7 @@
 import {useEffect, useRef, useState} from "react";
 import ValueConcept from "./ValueConcept.tsx";
 import Inspiration from "./Inspiration.tsx";
+import Reveal from "../../components/motion/Reveal.tsx";
 
 function Home() {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -48,14 +49,14 @@ function Home() {
 
             {/* Introduction Section */}
             <div className="w-full flex flex-col items-center px-5 py-12 md:px-12 lg:p-16 gap-6 lg:my-12">
-                <p className="w-full max-lg:max-w-2xl lg:w-2xl text-2xl lg:text-3xl gilmer tracking-tight max-lg:text-balance">
+                <Reveal as="p" className="w-full max-lg:max-w-2xl lg:w-2xl text-2xl lg:text-3xl gilmer tracking-tight max-lg:text-balance">
                     The new edition is here. At last - <span className="gilmer-bold">TAN’ ARS NATURA</span>
-                </p>
-                <p className="w-full max-lg:max-w-2xl lg:w-2xl text-lg lg:text-xl gilmer tracking-tight">
+                </Reveal>
+                <Reveal as="p" delay={150} className="w-full max-lg:max-w-2xl lg:w-2xl text-lg lg:text-xl gilmer tracking-tight">
                     We are delighted to share our new Pre-Fall capsule. Shot in the quiet landscapes of Kyrgyzstan,
                     crafted in felt to echo silence with ancestral rhythm. We present a collection where folklore is
                     reimagined through modern lines — an ode to nature and inner stillness.
-                </p>
+                </Reveal>
             </div>
 
             <Inspiration/>
