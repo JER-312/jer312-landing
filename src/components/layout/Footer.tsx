@@ -13,7 +13,7 @@ function Footer() {
                 </div>
                 <div className="flex-1 flex flex-col justify-center items-center gap-4">
                     <p className="text-xl gilmer">Contact Us</p>
-                    <a href={`mailto:${email}`} className="gilmer">{email}</a>
+                    <a href={`mailto:${email}`} className="gilmer py-2.5 lg:py-0">{email}</a>
                 </div>
                 <div className="flex-1 flex flex-col justify-center items-center gap-4">
                     <p className="text-xl gilmer">Social Media</p>
