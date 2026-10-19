@@ -5,27 +5,27 @@ function ValueConcept() {
     return (
         <>
             {/* Concept Section with Mountain */}
-            <section className="relative pb-[50vh] mb-32 md:mb-0">
+            <section className="relative pb-16 lg:pb-[50vh]">
                 {/* Background with mountain */}
                 <div className="flex items-end bg-white">
-                    <div className="w-full pt-[25vh] bg-gradient-to-b from-black via-black to-white"
+                    <div className="w-full pt-16 lg:pt-[25vh] bg-gradient-to-b from-black via-black to-white"
                          style={{backgroundImage: 'linear-gradient(to bottom, black 97%, white 3%)'}}>
-                        <img src={mountain} alt="mountain" className="w-full h-auto"/>
+                        <img src={mountain} alt="mountain" className="w-full h-auto max-lg:h-[40svh] max-lg:object-cover"/>
                     </div>
                 </div>
 
                 {/* Content */}
-                <div className="absolute left-0 flex flex-col items-end w-full md:top-[70vh] top-[50vh] px-5 md:px-20">
-                    <div className="flex flex-col items-end w-full md:flex-row">
-                        <div className="flex flex-col items-start w-full md:w-1/2">
+                <div className="lg:absolute left-0 flex flex-col items-end w-full lg:top-[70vh] px-5 md:px-12 lg:px-20">
+                    <div className="flex flex-col items-end w-full max-lg:gap-6 lg:flex-row">
+                        <div className="flex flex-col items-start w-full lg:w-1/2">
                             <h2 className="flex flex-col items-start">
-                                <span className="pt-5 text-6xl gilmer-bold md:text-8xl lg:text-9xl">VALUE</span>
-                                <span className="pt-2 text-6xl gilmer-bold md:text-8xl lg:text-9xl">STORY</span>
-                                <span className="pt-2 text-6xl gilmer-bold md:text-8xl lg:text-9xl">CONCEPT</span>
+                                <span className="pt-5 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl">VALUE</span>
+                                <span className="pt-2 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl">STORY</span>
+                                <span className="pt-2 text-5xl gilmer-bold sm:text-7xl md:text-8xl lg:text-9xl">CONCEPT</span>
                             </h2>
                         </div>
 
-                        <div className="flex flex-col items-start text-left w-full md:w-1/2">
+                        <div className="flex flex-col items-start text-left w-full lg:w-1/2">
                             <p className="p-1 text-xl gilmer-medium md:text-2xl lg:text-3xl">
                                 «At JER 312, we weave cultural heritage and innovative design into
                                 multifunctional garments, empowering you to express your unique
@@ -37,7 +37,7 @@ function ValueConcept() {
                     <div className="mt-8">
                         <Link
                             to="/about"
-                            className="flex items-center justify-center h-12 px-8 gilmer-medium text-white bg-black rounded-xl md:h-16 md:w-48 hover:bg-gray-800 transition-colors duration-300">
+                            className="flex items-center justify-center h-12 px-8 gilmer-medium text-white bg-black rounded-xl lg:h-16 lg:w-48 hover:bg-gray-800 transition-colors duration-300">
                             READ MORE
                         </Link>
                     </div>
