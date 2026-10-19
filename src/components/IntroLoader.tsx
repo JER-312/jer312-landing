@@ -7,6 +7,7 @@ import {useEffect, useLayoutEffect, useState} from "react";
 declare global {
     interface Window {
         __jerHeroReady?: boolean;
+        __jerIntroDone?: boolean;
     }
 }
 
@@ -34,6 +35,8 @@ function shouldShow(): boolean {
 // Decided once per page load (not in render: StrictMode would run it twice).
 const SHOW_ON_LOAD = shouldShow();
 const START = performance.now(); // anchors the hard cap, even if effects run late
+// Motion (hooks/useInView) waits for this: set now if there is no intro, else when it starts leaving.
+if (!SHOW_ON_LOAD) window.__jerIntroDone = true;
 
 function IntroLoader() {
     const [phase, setPhase] = useState<"in" | "out" | "done">(SHOW_ON_LOAD ? "in" : "done");
@@ -79,6 +82,10 @@ function IntroLoader() {
 
     useEffect(() => {
         if (phase !== "out") return;
+        if (!window.__jerIntroDone) {
+            window.__jerIntroDone = true;
+            window.dispatchEvent(new Event("jer:intro-done"));
+        }
         const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         const t = window.setTimeout(() => setPhase("done"), reduced ? REDUCED_MS : EXIT_MS);
         return () => window.clearTimeout(t);

@@ -45,3 +45,32 @@
     .jer-intro-out { transform: none; opacity: 0; }
     .jer-intro-out .jer-intro-logo { transform: none; }
 }
+
+/* Motion primitives (components/motion). Only transform/opacity animate.
+   SplitText: letters rise from below a per-word clip; it swaps to plain text when done. */
+.jer-split-word {
+    display: inline-block;
+    white-space: nowrap;
+    clip-path: inset(-0.4em -0.2em 0 -0.2em);
+}
+.jer-split-letter {
+    display: inline-block;
+    transform: translateY(110%);
+    transition: transform 850ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.jer-split.jer-in .jer-split-letter {
+    transform: none;
+}
+/* Reveal: fade + slide up */
+.jer-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.jer-reveal.jer-in {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .jer-split-letter, .jer-reveal { transition: none; transform: none; opacity: 1; }
+}
