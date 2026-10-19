@@ -1,15 +1,16 @@
 import Header from "./Header.tsx";
-import {Outlet} from "react-router-dom";
+import {Outlet, ScrollRestoration} from "react-router-dom";
 import Footer from "./Footer.tsx";
 
 function Layout() {
     return (
         <div>
             <Header/>
-            <div>
+            <main>
                 <Outlet/>
-            </div>
+            </main>
             <Footer/>
+            <ScrollRestoration/>
         </div>
     );
 }
