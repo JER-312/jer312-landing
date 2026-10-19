@@ -7,7 +7,7 @@ function Inspiration() {
     return (
         <section className="w-full flex flex-col items-center p-8 md:p-12 lg:p-16">
             <div className="flex flex-col items-center gap-6 pb-12">
-                <p className="text-3xl md:text-4xl lg:text-5xl gilmer-bold text-center">ORIGINS OF TEXTURE</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl gilmer-bold text-center">ORIGINS OF TEXTURE</h2>
                 <p className="text-lg md:text-xl gilmer tracking-tight max-w-3xl text-center">
                     Color palettes and textures are drawn from seasonal Kyrgyz landscapes, transforming nature's
                     fluidity into tactile motifs.

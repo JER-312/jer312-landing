@@ -5,6 +5,9 @@ function Home() {
 
     return (
         <div className="w-full">
+            <title>JER312 — Contemporary nomadic fashion from Kyrgyzstan</title>
+            <meta name="description" content="JER 312 is a contemporary nomadic fashion brand from Kyrgyzstan, merging ancestral felt craftsmanship with transformable design."/>
+            <h1 className="sr-only">JER312</h1>
             <section className="relative w-full bg-white px-16">
                 <div className="relative w-full h-auto rounded-xl overflow-hidden">
                     <video

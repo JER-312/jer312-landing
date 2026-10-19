@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import mountain from "../../assets/images/home/mountain.svg";
 
 function ValueConcept() {
@@ -17,9 +18,11 @@ function ValueConcept() {
                 <div className="absolute left-0 flex flex-col items-end w-full md:top-[70vh] top-[50vh] px-5 md:px-20">
                     <div className="flex flex-col items-end w-full md:flex-row">
                         <div className="flex flex-col items-start w-full md:w-1/2">
-                            <p className="pt-5 text-6xl gilmer-bold md:text-8xl lg:text-9xl">VALUE</p>
-                            <p className="pt-2 text-6xl gilmer-bold md:text-8xl lg:text-9xl">STORY</p>
-                            <p className="pt-2 text-6xl gilmer-bold md:text-8xl lg:text-9xl">CONCEPT</p>
+                            <h2 className="contents">
+                                <span className="pt-5 text-6xl gilmer-bold md:text-8xl lg:text-9xl">VALUE</span>
+                                <span className="pt-2 text-6xl gilmer-bold md:text-8xl lg:text-9xl">STORY</span>
+                                <span className="pt-2 text-6xl gilmer-bold md:text-8xl lg:text-9xl">CONCEPT</span>
+                            </h2>
                         </div>
 
                         <div className="flex flex-col items-start text-left w-full md:w-1/2">
@@ -32,10 +35,11 @@ function ValueConcept() {
                     </div>
 
                     <div className="mt-8">
-                        <button
+                        <Link
+                            to="/about"
                             className="flex items-center justify-center h-12 px-8 gilmer-medium text-white bg-black rounded-xl md:h-16 md:w-48 hover:bg-gray-800 transition-colors duration-300">
                             READ MORE
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

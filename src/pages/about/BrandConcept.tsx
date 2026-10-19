@@ -21,7 +21,7 @@ const BrandConcept = () => (
         <div className="flex-1 flex items-center justify-center">
             <img
                 src={fullLogo}
-                alt="half logo"
+                alt="JER312 logo"
                 className="w-full max-w-sm h-auto"
             />
         </div>
