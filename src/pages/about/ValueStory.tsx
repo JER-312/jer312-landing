@@ -1,13 +1,13 @@
 const ValueStory = () => (
-    <section className="flex flex-row justify-between items-center py-20 px-20">
+    <section className="flex flex-col lg:flex-row justify-between items-center max-lg:gap-10 py-12 lg:py-20 px-6 lg:px-20">
         <div className="flex-1 flex justify-center">
-            <h2 className="flex flex-col gap-4 items-center gilmer-bold text-8xl">
+            <h2 className="flex flex-col gap-4 items-center gilmer-bold text-5xl sm:text-7xl lg:text-8xl">
                 <span>VALUE</span>
                 <span>STORY</span>
             </h2>
         </div>
-        <div className="flex-1 px-8">
-            <div className="flex flex-col gap-4 gilmer text-xl">
+        <div className="flex-1 lg:px-8">
+            <div className="flex flex-col gap-4 gilmer text-lg lg:text-xl">
                 <p>
                     JER 312 is a contemporary nomadic fashion brand. We merge ancestral savoir-faire with transformable
                     design, reimagining traditional nomadic craftsmanship for today. Our work introduces a distinct

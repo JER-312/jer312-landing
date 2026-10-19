@@ -1,12 +1,12 @@
 import fullLogo from '../../assets/images/about/full-logo.svg';
 
 const BrandConcept = () => (
-    <section className="flex flex-row py-20 px-20">
-        <div className="flex-1 flex flex-col justify-around items-center">
-            <h2 className="gilmer-bold text-8xl">
+    <section className="flex flex-col lg:flex-row max-lg:gap-12 py-12 lg:py-20 px-6 lg:px-20">
+        <div className="flex-1 flex flex-col justify-around items-center max-lg:gap-8">
+            <h2 className="gilmer-bold text-5xl sm:text-7xl lg:text-8xl">
                 CONCEPT
             </h2>
-            <div className="flex flex-col gap-4 w-xl gilmer text-xl">
+            <div className="flex flex-col gap-4 w-full lg:w-xl gilmer text-lg lg:text-xl">
                 <p>
                     The goal is to ensure that each person feels comfortable in these clothes through the customization
                     of personal style and expression. Style becomes a medium through which people showcase their
@@ -22,7 +22,7 @@ const BrandConcept = () => (
             <img
                 src={fullLogo}
                 alt="JER312 logo"
-                className="w-full max-w-sm h-auto"
+                className="w-full max-w-60 sm:max-w-xs lg:max-w-sm h-auto"
             />
         </div>
     </section>
