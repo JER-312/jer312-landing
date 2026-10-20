@@ -60,9 +60,16 @@ Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Resp
 - Classes live in `src/index.css` (`.jer-*`). Animate only transform/translate/scale, opacity and clip-path; the resting state must match the static markup (no layout shift)
 - Everything must respect `prefers-reduced-motion: reduce` (content visible at once, no hover motion)
 
+## Deploy
+- GitHub Pages via `.github/workflows/deploy.yml`, runs on push to `main` (or manual dispatch)
+- Custom domain `jer312.fr` via `public/CNAME`; Vite `base` stays `/`
+- SPA fallback: the workflow copies `dist/index.html` to `dist/404.html` (deep links work, but are served with HTTP 404)
+- `public/` also holds `robots.txt`, `sitemap.xml`, `og-image.jpg` (1200x630)
+- Flow: work on `dev`, merge `dev` -> `main` to release
+
 ## Gotchas
 - Summer and Spring collections both say "3 RD EDITION": TODO in `collections.ts`, confirm with client
 - Footer Facebook icon has no link (no URL known)
-- `index.html` has no `og:image`/`og:url` yet: production domain unknown (TODO comment there)
-- No `.env` files, no deploy config in repo. Hosting target unknown
+- `index.html` canonical/`og:url` are static (`https://jer312.fr/` on every route)
+- No `.env` files
 - `README.md` is the stock Vite template
