@@ -45,6 +45,7 @@ Marketing/landing site for JER312, a felt-based fashion brand (Kyrgyzstan). Resp
   - Desktop (≥1024px) must stay pixel-identical when changing mobile styles
   - Use `max-lg:`/`max-sm:` where a base class would also change desktop (e.g. `max-lg:gap-10`, `max-lg:py-2`)
   - Mobile side gutter is 20px (`px-5`); tap targets at least 44x44px below `lg`
+  - Wide screens: content is capped at 1440px via the `container-site` utility (`index.css`; put the section's padding on the same element); backgrounds stay full-bleed (coloured section outside, container inside); no `vw` units for horizontal sizing; ≤1440px must stay pixel-identical
   - Gallery: below `sm`, multi-image rows become a 2-column grid of equal 3:4 tiles; odd rows let the first tile span both columns (`CollectionSection.tsx`)
 - Commit messages: `<type>: <description>` (feat, fix, refactor, perf, docs, chore)
 
