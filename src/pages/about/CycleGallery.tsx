@@ -29,7 +29,7 @@ const CycleGallery = () => {
     };
 
     return (
-        <section className="flex flex-col py-12 lg:py-20 px-5 lg:px-40 gap-8">
+        <section className="flex flex-col py-12 lg:py-20 px-5 lg:px-40 gap-8 container-site">
             <div className="flex-1 flex flex-col justify-center items-center">
                 <div className="w-full">
                     <div className="flex flex-col gap-4 gilmer text-lg lg:text-xl">

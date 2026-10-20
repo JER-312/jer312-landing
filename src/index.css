@@ -1,5 +1,12 @@
 @import "tailwindcss";
 @import "./gilmer.css";
+/* Site container: caps content at 1440px and centers it on wide screens. Section backgrounds
+   stay full-bleed: put the container (with the section's padding) inside the coloured section. */
+@utility container-site {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+}
 /* IntroLoader: logo stitch timeline (total 1200ms, see STITCH_MS) */
 .jer-stitch-reveal {
     stroke-dasharray: 1 1;

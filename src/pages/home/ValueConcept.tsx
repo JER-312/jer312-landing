@@ -17,7 +17,7 @@ function ValueConcept() {
                 </div>
 
                 {/* Content */}
-                <div className="lg:absolute left-0 flex flex-col items-end w-full lg:top-[70vh] px-5 md:px-12 lg:px-20">
+                <div className="lg:absolute left-0 right-0 flex flex-col items-end w-full lg:top-[70vh] px-5 md:px-12 lg:px-20 container-site">
                     <div className="flex flex-col items-end w-full max-lg:gap-6 lg:flex-row">
                         <div className="flex flex-col items-start w-full lg:w-1/2">
                             <h2 className="flex flex-col items-start">

@@ -34,7 +34,7 @@ function useScrollingClass() {
 const Gallery = () => {
     const ref = useScrollingClass();
     return (
-        <div ref={ref} className="jer-gallery flex flex-col py-[10vh] max-lg:py-8 px-5 lg:px-[2vw] gilmer-regular">
+        <div ref={ref} className="jer-gallery flex flex-col py-[10vh] max-lg:py-8 px-5 lg:px-[min(2vw,28.8px)] gilmer-regular container-site">
             <title>Gallery — JER312</title>
             <meta name="description" content="JER 312 collections: felt garments and yurt caps shot in Bishkek, Paris, Rome and New York."/>
             <h1 className="sr-only">Gallery</h1>

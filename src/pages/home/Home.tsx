@@ -24,7 +24,7 @@ function Home() {
             <title>JER312 — Contemporary nomadic fashion from Kyrgyzstan</title>
             <meta name="description" content="JER 312 is a contemporary nomadic fashion brand from Kyrgyzstan, merging ancestral felt craftsmanship with transformable design."/>
             <h1 className="sr-only">JER312</h1>
-            <section className="relative w-full bg-white px-5 lg:px-16">
+            <section className="relative w-full bg-white px-5 lg:px-16 container-site">
                 <div
                     className="relative w-full h-auto rounded-xl overflow-hidden bg-cover bg-center"
                     style={{backgroundImage: "url(/jer312-poster.avif)"}}

@@ -3,7 +3,7 @@ import SplitText from "../../components/motion/SplitText.tsx";
 import Reveal from "../../components/motion/Reveal.tsx";
 
 const BrandConcept = () => (
-    <section className="flex flex-col lg:flex-row max-lg:gap-12 py-12 lg:py-20 px-5 lg:px-20">
+    <section className="flex flex-col lg:flex-row max-lg:gap-12 py-12 lg:py-20 px-5 lg:px-20 container-site">
         <div className="flex-1 flex flex-col justify-around items-center max-lg:gap-8">
             <SplitText as="h2" className="gilmer-bold text-5xl sm:text-7xl lg:text-8xl" text="CONCEPT"/>
             <div className="flex flex-col gap-4 w-full lg:w-xl gilmer text-lg lg:text-xl">

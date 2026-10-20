@@ -7,7 +7,7 @@ import Reveal from "../../components/motion/Reveal.tsx";
 
 function Inspiration() {
     return (
-        <section className="w-full flex flex-col items-center px-5 py-12 md:p-12 lg:p-16">
+        <section className="w-full flex flex-col items-center px-5 py-12 md:p-12 lg:p-16 container-site">
             <div className="flex flex-col items-center gap-6 pb-12">
                 <SplitText as="h2" className="text-3xl md:text-4xl lg:text-5xl gilmer-bold text-center" text="ORIGINS OF TEXTURE"/>
                 <Reveal as="p" delay={300} className="text-lg lg:text-xl gilmer tracking-tight max-w-3xl text-center">
@@ -45,7 +45,7 @@ function Inspiration() {
                     <img
                         src={craftsmanshipProcess}
                         alt="Craftsmanship Process"
-                        className="w-full object-cover h-[50svh] md:h-[65svh] lg:h-[75vh] max-h-[900px]"
+                        className="w-full object-cover h-[50svh] md:h-[65svh] lg:h-[75vh] max-h-[900px] min-[1441px]:max-h-[675px]"
                     />
                     <p className="text-lg gilmer-medium">Craftsmanship Process</p>
                 </div>
@@ -53,7 +53,7 @@ function Inspiration() {
                     <img
                         src={finalPiece}
                         alt="Final Piece"
-                        className="w-full object-cover h-[50svh] md:h-[65svh] lg:h-[75vh] max-h-[900px]"
+                        className="w-full object-cover h-[50svh] md:h-[65svh] lg:h-[75vh] max-h-[900px] min-[1441px]:max-h-[675px]"
                     />
                     <p className="text-lg gilmer-medium">Final Piece</p>
                 </div>

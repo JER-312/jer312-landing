@@ -62,11 +62,13 @@ export type Collection = {
     rows: CollectionImage[][];
 };
 
-const H45 = "h-[45vh] sm:h-[60vh] md:h-[70vh]";
-const H55 = "h-[55vh] sm:h-[70vh] md:h-[80vh]";
-const H60 = "h-[60vh] sm:h-[75vh] md:h-[85vh]";
-const H65_80 = "h-[65vh] sm:h-[80vh] md:h-[90vh]";
-const H65_90 = "h-[65vh] sm:h-[90vh] md:h-[100vh]";
+// Above 1440px wide the gallery is capped at 1440, so heights are capped at their 1440x900 value
+// to keep row proportions (tall monitors would otherwise make the tiles very narrow).
+const H45 = "h-[45vh] sm:h-[60vh] md:h-[70vh] min-[1441px]:max-h-[630px]";
+const H55 = "h-[55vh] sm:h-[70vh] md:h-[80vh] min-[1441px]:max-h-[720px]";
+const H60 = "h-[60vh] sm:h-[75vh] md:h-[85vh] min-[1441px]:max-h-[765px]";
+const H65_80 = "h-[65vh] sm:h-[80vh] md:h-[90vh] min-[1441px]:max-h-[810px]";
+const H65_90 = "h-[65vh] sm:h-[90vh] md:h-[100vh] min-[1441px]:max-h-[900px]";
 
 const PORTRAIT = "aspect-[2/3]";
 const SQUARE = "aspect-square";

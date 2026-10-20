@@ -6,7 +6,7 @@ function Footer() {
     const currentYear = new Date().getFullYear();
     return (
         <footer className="flex flex-col justify-around bg-black text-white">
-            <div className="flex flex-col max-lg:gap-10 px-6 py-12 lg:flex-row lg:p-16">
+            <div className="flex flex-col max-lg:gap-10 px-6 py-12 lg:flex-row lg:p-16 container-site">
                 <div className="flex-1 flex flex-col justify-center items-center gap-4">
                     <img src={jer312} alt="jer 312" className="h-12"/>
                     <p className="gilmer-medium">MADE IN KYRGYZ REPUBLIC</p>
